@@ -187,3 +187,7 @@ except Exception:
     plt.tight_layout()
     plt.savefig("velocity_magnitude.png", dpi=150)
     print("Saved velocity_magnitude.png")
+
+# ---------------------------------------------------------------------------
+# End of file
+# ---------------------------------------------------------------------------    
