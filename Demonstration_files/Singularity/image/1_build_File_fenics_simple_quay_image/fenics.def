@@ -1,0 +1,12 @@
+Bootstrap: docker
+From: quay.io/fenicsproject/stable:latest
+
+%post
+    apt-get update && \
+    apt-get install -y nano python3-pip && \
+    rm -rf /var/lib/apt/lists/*
+
+    python3 -m pip install --no-cache-dir matplotlib
+
+%runscript
+    /bin/bash "$@"
